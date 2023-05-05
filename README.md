@@ -26,7 +26,7 @@ Após configurar o sistema, você pode realizar as seguintes operações:
 
 ## Registro de Usuários
 Para registrar um usuário, envie uma requisição POST para a rota /salvar com o seguinte corpo:
-localhost:8080/usuarios/salvar
+* Exemplo: localhost:8080/usuarios/salvar
 
 * Exemplo json para cadastro
 
@@ -39,7 +39,7 @@ localhost:8080/usuarios/salvar
 ```
 ## Autenticação de Usuários
 Para autenticar um usuário, envie uma requisição POST para a rota /login com o seguinte corpo:
-localhost:8080/usuarios/login
+* Exemplo: localhost:8080/usuarios/login
 * Exemplo json para autenticação
 
 ```
@@ -56,6 +56,6 @@ Para fazer um teste com o token gerado na autenticação tem um endpoint de list
 
 Requisição GET /listar.
 
-localhost:8080/usuarios/listar
+* Exemplo: localhost:8080/usuarios/listar
 
-Se o token estiver correto, o sistema retornará uma resposta com o status 200 OK. Caso contrário, a resposta terá o status 401 Unauthorized.
+Se o token estiver correto, o sistema retornará uma resposta com o status 200 OK. Caso contrário, a resposta terá o status 403 Forbidden.
